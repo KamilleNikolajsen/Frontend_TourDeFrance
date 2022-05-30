@@ -33,13 +33,15 @@ async function addCyclist(event){
     })
   }).then(response => response.json().catch(reason => alert(reason)))
   showCyclists();
-
+/*
   name.value = "";
   age.value = "";
   totalTime.value = "";
   sprintPoints.value = "";
   mountainPoints.value = "";
   teamDropDown.selectedIndex = teamDropDown.selectedIndex[0];
+
+ */
 
 }
 

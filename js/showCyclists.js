@@ -12,7 +12,6 @@ function emptyTable() {
 
 
 async function showCyclists(){
-
   emptyTable();
 
   const list = await fetchCyclists();
