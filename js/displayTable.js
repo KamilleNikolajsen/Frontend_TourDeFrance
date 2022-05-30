@@ -47,6 +47,21 @@ function createTableRowData(cyclist) {
   tableRow.appendChild(createTableData(cyclist.sprintPoints));
   tableRow.appendChild(createTableData(cyclist.mountainPoints));
   tableRow.appendChild(createTableData(cyclist.team.name));
+  tableRow.appendChild(createEditButton("Edit", "editButton", cyclist.id));
 
   return tableRow;
+}
+
+
+function createEditButton(valName, idName, cycId){
+
+  const editButton = document.createElement('input');
+  editButton.type = 'button';
+  editButton.setAttribute('value', valName);
+  editButton.setAttribute('id', idName);
+  editButton.setAttribute('class', "button");
+
+  editButton.addEventListener('click', () => location.href = 'updateCyclist.html' + '?id=' + cycId);
+
+  return editButton;
 }

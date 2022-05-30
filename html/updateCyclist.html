@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Cyclist</title>
+</head>
+<body>
+
+<div class="contentDiv">
+  <form method="PUT" action="http://localhost:8080/editCyclist" id="editCyclist">
+
+    <h2>Edit Cyclist</h2>
+    <div id="headlineEdit">
+      <label>Name</label>
+      <input type="text" placeholder="Name" required id="name" class="inputField">
+      <label>Age</label>
+      <input type="text" placeholder="Age" id="age" class="inputField">
+      <label>Total Time In Hours</label>
+      <input type="text" placeholder="Total Time" required id="time" class="inputField">
+      <label>Amount Of Mountain Points</label>
+      <input type="text" placeholder="Mountain Points" required id="mPoints" class="inputField">
+      <label>Amount Of Sprint Points</label>
+      <input type="text" placeholder="Sprint Points" required id="sPoints" class="inputField">
+      <label>Team</label>
+      <select id="teamDD"></select>
+
+      <input type="submit" value="Save" class="button">
+      <button type="button" id="cancelButton" class="button" onclick="history.back()">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script src="../js/editCyclist.js"></script>
+<script src="../js/displayTable.js"></script>
+
+</body>
+</html>
