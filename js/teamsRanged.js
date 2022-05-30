@@ -15,6 +15,7 @@ function fetchRangedList(url){
 
 async function showRangedByTime(){
   const timeList = await fetchRangedList(timeUrl);
+  console.log(timeList);
   await displayTableTeam(timeList, createTableRowDataTime, "#timeTable");
 }
 
