@@ -32,6 +32,7 @@ async function addCyclist(event){
       team: createTeamObject()
     })
   }).then(response => response.json().catch(reason => alert(reason)))
+  showCyclists();
 
   name.value = "";
   age.value = "";
