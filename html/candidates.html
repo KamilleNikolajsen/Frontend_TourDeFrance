@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Candidates</title>
+  <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+<div class="contentDiv">
+  <form method="POST" action="http://localhost:8080/addCyclist" id="addCyclist">
+
+    <h2>Add A Cyclist</h2>
+    <div id="headline">
+      <label>Name</label>
+      <input type="text" placeholder="Name" required id="name" class="inputField">
+      <label>Age</label>
+      <input type="text" placeholder="Age" id="age" class="inputField">
+      <label>Total Time In Hours</label>
+      <input type="text" placeholder="Total Time" required id="time" class="inputField">
+      <label>Amount Of Mountain Points</label>
+      <input type="text" placeholder="Mountain Points" required id="mPoints" class="inputField">
+      <label>Amount Of Sprint Points</label>
+      <input type="text" placeholder="Sprint Points" required id="sPoints" class="inputField">
+      <label>Team</label>
+      <select id="teamDropDown"></select>
+
+      <input type="submit" value="Save" class="button">
+    </div>
+  </form>
+</div>
+
+<div id="ShowCyclistsList">
+  <form method="get" action="http://localhost:8080/showAllCyclists" id="showCyclists">
+    <!-- <input type="submit" value="Show Cyclists" class="button"> -->
+    <table id="table">
+      <h3 id="h3">Cyclists</h3>
+      <!-- Cyclists List content -->
+    </table>
+  </form>
+</div>
+
+<script src="../js/addCyclist.js"></script>
+<script src="../js/fillDropDown.js"></script>
+
+</body>
+</html>
