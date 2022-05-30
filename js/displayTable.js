@@ -48,6 +48,7 @@ function createTableRowData(cyclist) {
   tableRow.appendChild(createTableData(cyclist.mountainPoints));
   tableRow.appendChild(createTableData(cyclist.team.name));
   tableRow.appendChild(createEditButton("Edit", "editButton", cyclist.id));
+  tableRow.appendChild(createDeleteButton("Delete", "deleteButton", cyclist.id, tableRow))
 
   return tableRow;
 }
