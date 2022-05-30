@@ -1,0 +1,44 @@
+.headlineUpdate{
+  width: 33%;
+}
+
+h3{
+  text-align: center;
+}
+
+#rangedByTime{
+  width: 100%;
+  text-align: center;
+}
+
+.ShowRangedCyclists{
+  width: 33%;
+  text-align: center;
+  float: left;
+}
+
+.table{
+  width: 80%;
+  border-style: solid;
+  border-color: black;
+  margin-left: 43px;
+}
+
+#goBackButton{
+  margin-top: 50px;
+}
+
+#goBackButton:hover{
+  background-color: #bf2727;
+  color: white;
+  cursor: pointer;
+}
+
+tr:nth-child(even){
+  padding-bottom: 10px;
+  background-color: rgba(224, 238, 253, 0.54);
+}
+
+td{
+  padding-bottom: 10px;
+}

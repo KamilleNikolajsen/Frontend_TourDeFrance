@@ -36,6 +36,12 @@ function createTableData(data) {
   return tableData;
 }
 
+function createTableDiv(button){
+  const tableDiv = document.createElement('div');
+  tableDiv.appendChild(button);
+  return tableDiv;
+}
+
 function createTableRowData(cyclist) {
   const tableRow = createTableRow();
 
@@ -47,6 +53,8 @@ function createTableRowData(cyclist) {
   tableRow.appendChild(createTableData(cyclist.sprintPoints));
   tableRow.appendChild(createTableData(cyclist.mountainPoints));
   tableRow.appendChild(createTableData(cyclist.team.name));
+  //tableRow.appendChild(createTableDiv(createEditButton("Edit", "editButton", cyclist.id)));
+  //tableRow.appendChild(createTableDiv(createDeleteButton("Delete", "deleteButton", cyclist.id, tableRow)));
   tableRow.appendChild(createEditButton("Edit", "editButton", cyclist.id));
   tableRow.appendChild(createDeleteButton("Delete", "deleteButton", cyclist.id, tableRow))
 
@@ -62,7 +70,10 @@ function createEditButton(valName, idName, cycId){
   editButton.setAttribute('id', idName);
   editButton.setAttribute('class', "button");
 
-  editButton.addEventListener('click', () => location.href = 'updateCyclist.html' + '?id=' + cycId);
+  editButton.addEventListener('click', () => location.href = 'editCyclist.html' + '?id=' + cycId);
 
   return editButton;
 }
+
+
+

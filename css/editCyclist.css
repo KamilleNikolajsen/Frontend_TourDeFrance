@@ -1,0 +1,26 @@
+
+#editButton:hover{
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
+#cancelButton:hover{
+  background-color: #bf2727;
+  color: white;
+  cursor: pointer;
+}
+
+.button{
+  margin-left: 30px;
+}
+
+label{
+  margin-left: 30px;
+  white-space:nowrap;
+}
+
+.headline{
+  border-style: solid;
+  padding: 40px;
+}

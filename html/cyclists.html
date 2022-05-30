@@ -4,9 +4,23 @@
   <meta charset="UTF-8">
   <title>Cyclists</title>
   <link rel="stylesheet" href="../css/generel.css">
+  <link rel="stylesheet" href="../css/cyclists.css">
 
 </head>
 <body>
+
+<div id="ShowCyclistsList">
+  <form method="get" action="http://localhost:8080/showAllCyclists" id="showCyclists">
+    <!-- <input type="submit" value="Show Cyclists" class="button"> -->
+    <h2>A List Of Tour De France Cyclists</h2>
+    <table id="table">
+      <!-- Cyclists List content -->
+    </table>
+  </form>
+</div>
+
+<button type="button" id="rangedButton" class="button">Show Cyclists Ranged</button>
+
 <div class="contentDiv">
   <form method="POST" action="http://localhost:8080/addCyclist" id="addCyclist">
 
@@ -25,22 +39,11 @@
       <label>Team</label>
       <select id="teamDropDown"></select>
 
-      <input type="submit" value="Save" class="button">
+      <input type="submit" value="Save" class="button" id="saveButton">
     </div>
   </form>
 </div>
 
-<button type="button" id="rangedButton" class="button">Show Cyclists Ranged</button>
-
-<div id="ShowCyclistsList">
-  <form method="get" action="http://localhost:8080/showAllCyclists" id="showCyclists">
-    <!-- <input type="submit" value="Show Cyclists" class="button"> -->
-    <h3 id="h3">Cyclists</h3>
-    <table id="table">
-      <!-- Cyclists List content -->
-    </table>
-  </form>
-</div>
 
 <script src="../js/addCyclist.js"></script>
 <script src="../js/fillDropDown.js"></script>

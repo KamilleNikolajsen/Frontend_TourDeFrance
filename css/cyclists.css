@@ -1,0 +1,62 @@
+#rangedButton{
+  margin-top: 44px;
+  margin-left: 553px;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+#rangedButton:hover{
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
+label{
+  margin-left: 35px;
+}
+
+.headline{
+  border-style: solid;
+  padding: 40px;
+}
+
+#saveButton{
+  margin-left: 30px;
+}
+
+#saveButton:hover{
+  background-color: rgba(62, 94, 62, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
+h2{
+  margin-top: 15px;
+}
+
+#table{
+  padding-bottom: 30px;
+  border-bottom-style: solid;
+}
+
+#table tr{
+  margin-top: 20px;
+}
+
+#deleteButton{
+  margin-right: -103px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+#deleteButton:hover{
+  background-color: #bf2727;
+  color: white;
+  cursor: pointer;
+}
+
+#editButton:hover{
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
