@@ -17,7 +17,7 @@
       <label>Age</label>
       <input type="text" placeholder="Age" id="age" class="inputField">
       <label>Total Time In Hours</label>
-      <input type="text" placeholder="Total Time" required id="time" class="inputField">
+      <input type="number" step="any" placeholder="Total Time" required id="time" class="inputField">
       <label>Amount Of Mountain Points</label>
       <input type="text" placeholder="Mountain Points" required id="mPoints" class="inputField">
       <label>Amount Of Sprint Points</label>
@@ -30,11 +30,13 @@
   </form>
 </div>
 
+<button type="button" id="rangedButton" class="button">Show Cyclists Ranged</button>
+
 <div id="ShowCyclistsList">
   <form method="get" action="http://localhost:8080/showAllCyclists" id="showCyclists">
     <!-- <input type="submit" value="Show Cyclists" class="button"> -->
+    <h3 id="h3">Cyclists</h3>
     <table id="table">
-      <h3 id="h3">Cyclists</h3>
       <!-- Cyclists List content -->
     </table>
   </form>
@@ -45,6 +47,7 @@
 <script src="../js/showCyclists.js"></script>
 <script src="../js/displayTable.js"></script>
 <script src="../js/deleteCyclist.js"></script>
+
 
 </body>
 </html>

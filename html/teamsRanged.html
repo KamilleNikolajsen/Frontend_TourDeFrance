@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teams Ranged</title>
+
+</head>
+<body>
+
+<h3>Cyclists Ranged</h3>
+
+<div class="ShowRangedCyclists">
+  <form method="get" action="http://localhost:8080/bestCountryByTime" id="rangedByTime">
+    <!-- <input type="submit" value="Show Candidates" class="button"> -->
+    <h4>Ranged By Time</h4>
+    <table class="table" id="timeTable">
+      <!-- Candidate List content -->
+    </table>
+  </form>
+</div>
+
+<div class="ShowRangedCyclists">
+  <form method="get" action="http://localhost:8080/bestCountryBySPoints" id="rangedBySPoints">
+    <!-- <input type="submit" value="Show Candidates" class="button"> -->
+    <h4>Ranged By Sprint Points</h4>
+    <table class="table" id="sprintTable">
+      <!-- Candidate List content -->
+    </table>
+  </form>
+</div>
+
+<div class="ShowRangedCyclists">
+  <form method="get" action="http://localhost:8080/bestCountryByMPoints" id="rangedByMPoints">
+    <!-- <input type="submit" value="Show Candidates" class="button"> -->
+    <h4>Ranged By Mountain Points</h4>
+    <table class="table" id="mountainTable">
+      <!-- Candidate List content -->
+    </table>
+  </form>
+</div>
+
+<button type="button" id="goBackButton" class="button" onclick="history.back()">Go Back</button>
+
+<script src="../js/displayTableTeam.js"></script>
+<script src="../js/teamsRanged.js"></script>
+
+</body>
+</html>

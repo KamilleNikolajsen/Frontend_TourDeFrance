@@ -7,14 +7,16 @@ const totalTime = document.querySelector("#time");
 const mountainPoints = document.querySelector("#mPoints");
 const sprintPoints = document.querySelector("#sPoints");
 const teamDropDown = document.querySelector("#teamDropDown");
+const rangedButton = document.querySelector("#rangedButton");
 
 const url = "http://localhost:8080/addCyclist";
+
 formAddCyclist.addEventListener("submit", addCyclist);
+rangedButton.addEventListener('click', showRangedPage);
 
 async function addCyclist(event){
 
   event.preventDefault();
-
   console.log(teamDropDown.options[teamDropDown.selectedIndex].innerText);
 
 
@@ -33,16 +35,13 @@ async function addCyclist(event){
     })
   }).then(response => response.json().catch(reason => alert(reason)))
   showCyclists();
-/*
+
   name.value = "";
   age.value = "";
   totalTime.value = "";
   sprintPoints.value = "";
   mountainPoints.value = "";
   teamDropDown.selectedIndex = teamDropDown.selectedIndex[0];
-
- */
-
 }
 
 function createTeamObject(){
@@ -63,5 +62,9 @@ function createTeamObject(){
   console.log(team.id);
 
   return team;
+}
+
+function showRangedPage() {
+    location.href = 'teamsRanged.html';
 }
 
