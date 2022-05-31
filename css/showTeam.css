@@ -1,0 +1,17 @@
+#goBackButton {
+  margin: 20px 0px 40px 615px;
+}
+
+#deleteButton {
+  margin-right: -115px;
+}
+
+#editButton {
+  margin-right: 50px;
+}
+
+#goBackButton:hover{
+  background-color: #bf2727;
+  color: white;
+  cursor: pointer;
+}

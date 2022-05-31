@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Team</title>
+  <link rel="stylesheet" href="../css/cyclists.css">
+  <link rel="stylesheet" href="../css/generel.css">
+  <link rel="stylesheet" href="../css/showTeam.css">
+</head>
+<body>
+
+<div id="ShowCyclistsList">
+  <form method="get" action="http://localhost:8080/showCyclistsByTeam" id="showTeam">
+    <table id="table">
+      <h3 id="h3">Cyclists</h3>
+    </table>
+  </form>
+</div>
+<button type="button" id="goBackButton" class="button" onclick="history.back()">Go Back</button>
+
+<script src="../js/displayTable.js"></script>
+<script src="../js/showTeam.js"></script>
+<script src="../js/deleteCyclist.js"></script>
+
+</body>
+</html>
