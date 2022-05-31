@@ -1,11 +1,50 @@
 #rangedButton{
   margin-top: 44px;
-  margin-left: 553px;
+  margin-left: 144px;
   padding: 15px 20px;
   font-size: 15px;
 }
 
 #rangedButton:hover{
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
+#sortButton{
+  margin-top: 44px;
+  margin-left: 80px;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+#sortButton:hover{
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
+#randomButton{
+  margin-top: 44px;
+  margin-left: 131px;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+#randomButton:hover{
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
+#timeButton{
+  margin-top: 44px;
+  margin-left: 142px;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+#timeButton:hover{
   background-color: rgba(36, 86, 141, 0.54);
   color: white;
   cursor: pointer;
@@ -31,7 +70,7 @@ label{
 }
 
 h2{
-  margin-top: 15px;
+  margin-top: 40px;
 }
 
 #table{
