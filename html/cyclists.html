@@ -11,7 +11,6 @@
 
 <div id="ShowCyclistsList">
   <form method="get" action="http://localhost:8080/showAllCyclists" id="showCyclists">
-    <!-- <input type="submit" value="Show Cyclists" class="button"> -->
     <h2>A List Of Tour De France Cyclists</h2>
     <table id="table">
       <!-- Cyclists List content -->
@@ -26,16 +25,22 @@
 
     <h2>Add A Cyclist</h2>
     <div class="headline">
+
       <label>Name</label>
       <input type="text" placeholder="Name" required id="name" class="inputField">
+
       <label>Age</label>
       <input type="text" placeholder="Age" id="age" class="inputField">
+
       <label>Total Time In Hours</label>
       <input type="number" step="any" placeholder="Total Time" required id="time" class="inputField">
+
       <label>Amount Of Mountain Points</label>
       <input type="text" placeholder="Mountain Points" required id="mPoints" class="inputField">
+
       <label>Amount Of Sprint Points</label>
       <input type="text" placeholder="Sprint Points" required id="sPoints" class="inputField">
+
       <label>Team</label>
       <select id="teamDropDown"></select>
 
@@ -43,7 +48,6 @@
     </div>
   </form>
 </div>
-
 
 <script src="../js/addCyclist.js"></script>
 <script src="../js/fillDropDown.js"></script>

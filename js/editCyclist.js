@@ -7,7 +7,7 @@ const totalTimeNew = document.querySelector("#time");
 const mountainPointsNew = document.querySelector("#mPoints");
 const sprintPointsNew = document.querySelector("#sPoints");
 const teamDD = document.querySelector("#teamDD");
-const updateButton = document.querySelector("#saveButton");
+//const updateButton = document.querySelector("#saveButton");
 
 showCyclist();
 
@@ -26,18 +26,15 @@ async function showCyclist(){
   await fetchTeams().then(fetchTeams => fetchTeams.forEach(team => {
     const optionNew = document.createElement('option');
     optionNew.value = team.id;
-    console.log(optionNew.value);
+    //console.log(optionNew.value);
     optionNew.textContent = team.name;
-    console.log(optionNew.textContent);
+    //console.log(optionNew.textContent);
     teamDD.appendChild(optionNew);
   }))
 
   teamDD.value = cyclist.team.id;
 
   formEditCyclist.addEventListener("submit", editCyclist);
-
-  //updateButton.addEventListener("click", editCyclist);
-
 }
 
 async function editCyclist(event){
@@ -45,19 +42,18 @@ async function editCyclist(event){
 
   let newUrl = new URL(location.href);
   const cyclistId = newUrl.searchParams.get("id");
-  console.log(cyclistId);
+  //console.log(cyclistId);
   const cyclist = await fetchCyclist(cyclistId);
 
   await saveCyclist(cyclist);
 }
 
 async function saveCyclist(cyclist){
-
-  console.log(cyclist);
+  //console.log(cyclist);
 
   const editUrl = "http://localhost:8080/editCyclist"
 
-  console.log(cyclist.team.name);
+  //console.log(cyclist.team.name);
 
   await fetch(editUrl, {
     method: "PUT",
@@ -80,7 +76,6 @@ async function saveCyclist(cyclist){
 
   location.href = 'cyclists.html';
 }
-
 
 async function fetchCyclist(cyclistId){
   return await fetch("http://localhost:8080/getCyclist/" + cyclistId).then(response => response.json()).catch(reason => alert(reason));

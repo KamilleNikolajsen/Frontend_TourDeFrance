@@ -1,10 +1,5 @@
 "use strict";
 
-const formRangedByTime = document.querySelector("#rangedByTime");
-const formRangedBySPoints = document.querySelector("#rangedBySPoints");
-const formRangedByMPoints = document.querySelector("#rangedByMPoints");
-
-
 const timeUrl = "http://localhost:8080/bestCountryByTime";
 const sPointUrl = "http://localhost:8080/bestCountryBySPoints";
 const mPointUrl = "http://localhost:8080/bestCountryByMPoints";
@@ -15,7 +10,7 @@ function fetchRangedList(url){
 
 async function showRangedByTime(){
   const timeList = await fetchRangedList(timeUrl);
-  console.log(timeList);
+  //console.log(timeList);
   await displayTableTeam(timeList, createTableRowDataTime, "#timeTable");
 }
 

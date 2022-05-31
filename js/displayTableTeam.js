@@ -33,7 +33,6 @@ function createTableRowDataTime(team, list) {
 
   tableRow.appendChild(createTableData(team.name));
   tableRow.appendChild(createTableData(team.timeTotal + " Hours"));
-  //Source: https://www.javascripttutorial.net/javascript-array-indexof/
   tableRow.appendChild(createTableData(list.indexOf(team) + 1 + " Place"));
 
   return tableRow;
@@ -42,10 +41,9 @@ function createTableRowDataTime(team, list) {
 function createTableRowDataSprint(team, list) {
   const tableRow = createTableRow();
 
-  console.log(team);
+  //console.log(team);
   tableRow.appendChild(createTableData(team.name));
   tableRow.appendChild(createTableData(team.sprintPointTotal + " Points"));
-  //Source: https://www.javascripttutorial.net/javascript-array-indexof/
   tableRow.appendChild(createTableData(list.indexOf(team) + 1 + " Place"));
 
   return tableRow;
@@ -56,7 +54,6 @@ function createTableRowDataMountain(team, list) {
 
   tableRow.appendChild(createTableData(team.name));
   tableRow.appendChild(createTableData(team.mountainPointTotal + " Points"));
-  //Source: https://www.javascripttutorial.net/javascript-array-indexof/
   tableRow.appendChild(createTableData(list.indexOf(team) + 1 + " Place"));
 
   return tableRow;

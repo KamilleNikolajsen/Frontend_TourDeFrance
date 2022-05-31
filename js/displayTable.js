@@ -1,7 +1,6 @@
 "use strict";
 
 function displayTable(list){
-
   const table = document.querySelector("#table");
 
   const tr = createTableRow();
@@ -15,9 +14,7 @@ function displayTable(list){
   tr.appendChild(createTableHeader("Delete"));
   table.appendChild(tr);
 
-
   list.forEach((cyclist) => table.appendChild(createTableRowData(cyclist)));
-
 }
 
 function createTableRow() {
@@ -36,16 +33,9 @@ function createTableData(data) {
   return tableData;
 }
 
-function createTableDiv(button){
-  const tableDiv = document.createElement('div');
-  tableDiv.appendChild(button);
-  return tableDiv;
-}
-
 function createTableRowData(cyclist) {
   const tableRow = createTableRow();
-
-  console.log(cyclist);
+  //console.log(cyclist);
 
   tableRow.appendChild(createTableData(cyclist.name));
   tableRow.appendChild(createTableData(cyclist.age));
@@ -53,23 +43,19 @@ function createTableRowData(cyclist) {
   tableRow.appendChild(createTableData(cyclist.sprintPoints));
   tableRow.appendChild(createTableData(cyclist.mountainPoints));
   tableRow.appendChild(createTableData(cyclist.team.name));
-  //tableRow.appendChild(createTableDiv(createEditButton("Edit", "editButton", cyclist.id)));
-  //tableRow.appendChild(createTableDiv(createDeleteButton("Delete", "deleteButton", cyclist.id, tableRow)));
   tableRow.appendChild(createEditButton("Edit", "editButton", cyclist.id));
   tableRow.appendChild(createDeleteButton("Delete", "deleteButton", cyclist.id, tableRow))
 
   return tableRow;
 }
 
-
 function createEditButton(valName, idName, cycId){
-
   const editButton = document.createElement('input');
+
   editButton.type = 'button';
   editButton.setAttribute('value', valName);
   editButton.setAttribute('id', idName);
   editButton.setAttribute('class', "button");
-
   editButton.addEventListener('click', () => location.href = 'editCyclist.html' + '?id=' + cycId);
 
   return editButton;

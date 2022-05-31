@@ -10,12 +10,11 @@ function emptyTable() {
   document.querySelector('#table').innerHTML = '';
 }
 
-
 async function showCyclists(){
   emptyTable();
 
   const list = await fetchCyclists();
-  console.log(list);
+  //console.log(list);
 
   await displayTable(list);
 }

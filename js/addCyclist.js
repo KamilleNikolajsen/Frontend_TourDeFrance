@@ -15,10 +15,8 @@ formAddCyclist.addEventListener("submit", addCyclist);
 rangedButton.addEventListener('click', showRangedPage);
 
 async function addCyclist(event){
-
   event.preventDefault();
-  console.log(teamDropDown.options[teamDropDown.selectedIndex].innerText);
-
+  //console.log(teamDropDown.options[teamDropDown.selectedIndex].innerText);
 
   await fetch(url, {
     method: "POST",
@@ -45,8 +43,7 @@ async function addCyclist(event){
 }
 
 function createTeamObject(){
-
-  console.log("create Team Object");
+  //console.log("create Team Object");
   let team = {};
 
   const teamKey = teamDropDown.options[teamDropDown.selectedIndex].innerText;
@@ -57,9 +54,9 @@ function createTeamObject(){
   team.letter = team1.letter;
   team.votes = team1.votes;
 
-  console.log(team.name);
-  console.log(team.letter);
-  console.log(team.id);
+  //console.log(team.name);
+  //console.log(team.letter);
+  //console.log(team.id);
 
   return team;
 }
