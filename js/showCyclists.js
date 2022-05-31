@@ -21,30 +21,28 @@ function emptyTable() {
 
 async function showCyclists(){
   emptyTable();
-
   const list1 = await fetchCyclists(cyclistUrl);
-  console.log(list1);
+  //console.log(list1);
 
   await displayTable(list1);
 }
 
 async function showSortedCyclists(){
   emptyTable();
-
-  console.log("in sorted");
+  //console.log("in sorted");
 
   const list2 = await fetchCyclists(cyclistsSortedUrl)
-  console.log(list2);
+  //console.log(list2);
   await displayTable(list2)
 }
 
 async function showSortedByTime(){
   emptyTable();
 
-  console.log("in timesort");
+  //console.log("in timesort");
 
   const list3 = await fetchCyclists(timeSortUrl);
-  console.log(list3);
+  //console.log(list3);
   await displayTable(list3);
 }
 

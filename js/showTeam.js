@@ -1,6 +1,6 @@
 "use strict";
 
-const goBackButton = document.querySelector("#goBackButton");
+//const goBackButton = document.querySelector("#goBackButton");
 const headline = document.querySelector("#h3");
 const Team = document.querySelector("#h4");
 
@@ -17,20 +17,16 @@ async function showTeam(){
   let url = new URL(location.href);
   const teamId = url.searchParams.get("id");
 
-  console.log(teamId);
-
+  //console.log(teamId);
   emptyTable();
 
   const list = await fetchTeam(teamId);
-
   list.forEach(cyclist => {
     headline.textContent = "Cyclists From " + cyclist.team.name;
   })
-
-  console.log(headline);
-  console.log(list);
+  //console.log(headline);
+  //console.log(list);
 
   await displayTable(list);
 }
-
 showTeam();

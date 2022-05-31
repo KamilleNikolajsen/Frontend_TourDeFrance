@@ -50,6 +50,16 @@
   cursor: pointer;
 }
 
+#teamButton{
+  margin-left: 30px;
+}
+
+#teamButton:hover {
+  background-color: rgba(36, 86, 141, 0.54);
+  color: white;
+  cursor: pointer;
+}
+
 label{
   margin-left: 35px;
 }
@@ -64,7 +74,7 @@ label{
 }
 
 #saveButton:hover{
-  background-color: rgba(62, 94, 62, 0.54);
+  background-color: rgba(84, 128, 84, 0.54);
   color: white;
   cursor: pointer;
 }

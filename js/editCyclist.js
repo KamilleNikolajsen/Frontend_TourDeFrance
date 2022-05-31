@@ -7,7 +7,8 @@ const totalTimeNew = document.querySelector("#time");
 const mountainPointsNew = document.querySelector("#mPoints");
 const sprintPointsNew = document.querySelector("#sPoints");
 const teamDD = document.querySelector("#teamDD");
-//const updateButton = document.querySelector("#saveButton");
+const updateButton = document.querySelector("#saveButton");
+const editButton = document.querySelector("#editButton");
 
 showCyclist();
 
